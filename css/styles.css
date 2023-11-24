@@ -127,25 +127,23 @@ body{
         background-image: url(../img/email.png);
         background-size: 21px 21px;
       }
+  /* Адаптив блока с телефоном */
   .footer__tel__rect{
-    max-width: 214px;
-    width: 100%;
+    max-width: 100%;
   }
-  /* Объединяем прямоугольник с содержимым*/
+  /* Объединяем прямоугольник с содержимым */
   .tel__rect{
     display: flex;
     position: relative;
-    width: 214px;
+    width: 195px;
     height: 44px;
-    background-image: url(../img/Rectangle28.png);
+    background-image: url(../img/Rectangle28-2.png);
+    background-repeat: no-repeat;
   }
-  /* .rectangle__scale{
-    width: 100%;
-  } */
   /* Смещение телефона внутри прямоугольника */
   .footer__tel-1{
     position: absolute;
-    left: 22px;
+    left: 20px;
     top: 12px;
   }
   /* Телефон с номером */
@@ -164,8 +162,3 @@ body{
     background-image: url(../img/Phone1.png);
     background-size: 21px 21px;
   }
-  
-  /* .header__logo img {
-    width: 100%;
-    max-width: 414px;
-} */
