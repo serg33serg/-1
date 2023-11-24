@@ -112,3 +112,60 @@ body{
     border: 5px solid transparent; /* Прозрачные границы */
     border-top: 6px solid rgb(0, 0, 0); /* Добавляем треугольник */
    }
+   .footer__pochta{
+    display: block;
+    position: relative;
+    padding-left: 30px;
+   } 
+   .footer__pochta::before{
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: -2px;
+        width: 21px;
+        height: 21px;
+        background-image: url(../img/email.png);
+        background-size: 21px 21px;
+      }
+  .footer__tel__rect{
+    max-width: 214px;
+    width: 100%;
+  }
+  /* Объединяем прямоугольник с содержимым*/
+  .tel__rect{
+    display: flex;
+    position: relative;
+    width: 214px;
+    height: 44px;
+    background-image: url(../img/Rectangle28.png);
+  }
+  /* .rectangle__scale{
+    width: 100%;
+  } */
+  /* Смещение телефона внутри прямоугольника */
+  .footer__tel-1{
+    position: absolute;
+    left: 22px;
+    top: 12px;
+  }
+  /* Телефон с номером */
+  .footer__tel-2{
+    display: block;
+    position: relative;
+    padding-left: 30px;
+  }
+  .footer__tel-2::before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: -2px;
+    width: 21px;
+    height: 21px;
+    background-image: url(../img/Phone1.png);
+    background-size: 21px 21px;
+  }
+  
+  /* .header__logo img {
+    width: 100%;
+    max-width: 414px;
+} */
