@@ -49,21 +49,29 @@ body{
     font-style: normal;
     font-weight: 400;
 }
-.header{
+.header{  
     background-color: black;
 }
-.container{
+.container{  
     max-width: 1280px;
     margin: 0 auto;
 }
 .header__nav{
     display: flex;
     align-items: center;
-    padding: 10px 0;
+    padding: 15px 0;
+}
+/* .header__logo{
+    display: flex;
+} */
+.header__logo2{
+    max-width: 67px;
+    width: 100%;
 }
 .header__nav__nav{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 .font__14-700{
     color: #FFF;
@@ -78,8 +86,29 @@ body{
     text-decoration: none;
 }
 .footer__podborka{
-
+   display: flex;
+   align-items: center;
 }
 .podborka__oval{
-
+    position: relative;
+    margin-left: 10px;
+    width: 22px;px;
+    height: 22px;
+    border-radius: 15px;
+    background-color:#FFC94F;
 }
+.podborka__oval__treugol {
+    position: relative;
+    background: rgb(0, 0, 0);
+    /* border-radius: 10px; */
+    /* padding: 20px;
+    color: #fff; */
+   }
+   .podborka__oval__treugol::after {
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    left: 6px;
+    bottom: -20px; /* Положение треугольника */
+    border: 5px solid transparent; /* Прозрачные границы */
+    border-top: 6px solid rgb(0, 0, 0); /* Добавляем треугольник */
+   }
