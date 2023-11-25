@@ -59,6 +59,7 @@ body{
 .header__nav{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 15px 0;
 }
 /* .header__logo{
@@ -67,11 +68,14 @@ body{
 .header__logo2{
     max-width: 67px;
     width: 100%;
+    margin-right: 10px;
 }
 .header__nav__nav{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    gap: 10px;
+    margin-right: 10px;
 }
 .font__14-700{
     color: #FFF;
@@ -85,14 +89,20 @@ body{
     color: #FFC94F;
     text-decoration: none;
 }
-.footer__podborka{
+.font__14-700__black{
+    color: #000000;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+}
+.header__podborka{
    display: flex;
    align-items: center;
 }
 .podborka__oval{
     position: relative;
     margin-left: 10px;
-    width: 22px;px;
+    width: 22px;
     height: 22px;
     border-radius: 15px;
     background-color:#FFC94F;
@@ -107,15 +117,34 @@ body{
    .podborka__oval__treugol::after {
     content: ''; 
     position: absolute; /* Абсолютное позиционирование */
-    left: 6px;
-    bottom: -20px; /* Положение треугольника */
+    left: 7px;
+    bottom: -19px; /* Положение треугольника */
     border: 5px solid transparent; /* Прозрачные границы */
     border-top: 6px solid rgb(0, 0, 0); /* Добавляем треугольник */
    }
+   .dropdown{
+    position: relative;
+    display: inline-block;
+   }
+   .dropdown-content{
+    display: none;
+    position: absolute;
+    /* top: 30px; */
+    left: 12px;
+    background-color: #FFC94F;
+    min-width: 220px;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+   }
+   .dropdown:hover .dropdown-content {
+    display: block;
+}
    .footer__pochta{
     display: block;
     position: relative;
     padding-left: 30px;
+    margin-right: 10px;
    } 
    .footer__pochta::before{
         content: "";
@@ -161,4 +190,11 @@ body{
     height: 21px;
     background-image: url(../img/Phone1.png);
     background-size: 21px 21px;
+  }
+
+
+  @media (max-width: 1315px){
+    .header__nav{
+        margin: 0 15px;
+    }
   }
