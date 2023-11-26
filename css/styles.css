@@ -202,14 +202,17 @@ body{
 .lighthouse__main1{
     display: flex;
     justify-content: flex-end;
-    /* padding-right: 150px; */
     width: 50%;
+    padding-top: 4%;
+}
+.main__title{
+    margin-right: 10px;
 }
 .lighthouse__main1_1{
     display: flex;
     flex-direction: column;
-    max-width: 486px;
-    margin-right: 150px;
+    max-width: 561px;
+    margin-right: 71px;
 }
 /* .container__light{
     max-width: 660px;
@@ -227,23 +230,21 @@ body{
     width: 100%;
     object-fit: contain;
 }
-.font__36-800{
-    font-family: "MontserratAlternates-Bold";
+.font__light__title{
+    font-family: "MontserratAlternates-ExtraBold";
     color: #FFC94F;
     font-size: 36px;
     font-weight: 800;
     line-height: 40px;
 }
 .font__36-800_grey{
-    font-family: "MontserratAlternates-Bold";
+    font-family: "MontserratAlternates-ExtraBold";
     color: #535353;
     font-size: 36px;
     font-weight: 800;
     line-height: 40px;
 }
-.lite__text{
-   
-}
+
 h1 {
     color: #8C8C8C;
     font-family: "MontserratAlternates-Regular";
@@ -254,14 +255,67 @@ h1 {
 }
 .lite__h1{
     padding-top: 5%;
+    margin-right: 10px;
 }
 .button__light{
-    width: 197px;
+    max-width: 197px;
+    width: 100%;
     height: 44px;
     border: 3px solid #2196F3;
     background-color: #FFC94F;
     margin-top: 6%;
+    text-align: center;
+    padding: 10px 16px;
+    display: block;
+    transition: all 0.3s ease 0s;
 }
+.button__light:hover {
+    opacity: 0.8;
+  }
+h2{
+    color: #535353;
+    font-family: "MontserratAlternates-Bold";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 40px;
+}
+.list2__title{
+    padding-top: 136px;
+    margin-bottom: 35px;
+}
+.font__title{
+    font-family: "MontserratAlternates-Bold";
+    color: #FFC94F;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 40px;
+}
+.list__content{
+    display: flex;
+}
+.list__content1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 25%;
+}
+.list__content2{
+    display: flex;
+    width: 75%;  
+    object-fit: contain;
+}
+.font__18-700__yellow{
+    color: #FFC94F;
+    font-family: "MontserratAlternates-Medium";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 133.333% */
+}
+
+
+
 
 
 
@@ -274,5 +328,17 @@ h1 {
     }
     .lighthouse__main1_1{
         margin-right: auto;
+        
+    }
+    .lighthouse__main1{
+        padding-left: 20px;
+        padding-top: 2%;
+    }
+    .lighthouse__main2 {
+       padding-top: 10px;
+    }
+    .list2__container{
+        padding-left: 20px;
+        padding-right: 20px;
     }
   }
