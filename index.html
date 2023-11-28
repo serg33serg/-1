@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>light-house</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -78,17 +80,17 @@
                     </ul>
                 </nav>
                 <!-- Почта -->
-                <div class="footer__pochta">
+                <div class="header__pochta">
                     <a class="font__14-700 font__decor" href="">
                         info@light-house.ru
                     </a>
                 </div>
                 <!-- Телефон -->
-                <a class="footer__tel__rect" href="">
+                <a class="header__tel__rect" href="">
                     <div class="tel__rect">
                         <!-- <img class="rectangle__scale" src="./img/Rectangle28.png" alt=""> -->
-                        <div class="footer__tel-1">
-                            <div class="footer__tel-2">
+                        <div class="header__tel-1">
+                            <div class="header__tel-2">
                                 <div class="font__14-700">
                                     +7(495)315-41-414
                                 </div>
@@ -130,23 +132,53 @@
             <div class="list2__container">
                 <div class="list2__title">
                     <h2>
-                        <span class="font__title">L&nbsp;</span> Каталог
+                        Каталог
                     </h2>
                 </div>
+                <!-- Каталог -->
                 <div class="list__content">
+                    <!-- Первый столбец каталога -->
                     <div class="list__content1">
-                      <span class="font__18-700__yellow">Трековые светильники</span> 
-                      <span>Органично вписываются в интерьеры в стиле хай-тек, лофт </span> 
-                    </div>
+                        <a class="content_toggle on__black" href="#">Трековые светильники</a>
+                        <!-- Скрытый текст1 -->
+                        <div class="content_block">
+                            <p class="content__block2">Органично вписываются в интерьеры в стиле хай-тек, лофт</p>
+                            <div class="list2__button font__14-700__white">
+                                Перейти в каталог
+                            </div>
+                        </div>
+                        <div class="on__black">
+                            Встраиваемые светильники
+                        </div>
+                        <div class="on__black">
+                            Фигурные светильники
+                        </div>
+                        <div class="on__black">
+                            Светильники Армстронг
+                        </div>
+                        <div class="on__black">
+                            Светильники Армстронг с равномерной засветкой
+                        </div>
+                    </div> <!-- Первый столбец закончился -->
+                    <!-- Изображение  в каталоге -->
                     <div class="list__content2">
                         <img src="./img/i 2.jpg" alt="Интерьерное решение2">
                     </div>
                 </div>
+                <!-- Конец католога -->
             </div><!-- Конец list2__container -->
         </div> <!-- Конец container -->
 
     </section>
 
+    <!-- jquere -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- my js -->
+    <script src="./js/1.js"></script>
 
 </body>
 
