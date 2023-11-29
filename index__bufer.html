@@ -1,2 +1,17 @@
-<span class="font__18-700__yellow">Трековые светильники</span>
-<span>Органично вписываются в интерьеры в стиле хай-тек, лофт </span>
+<a class="content_toggle" href="#">Показать текст</a>
+ <div class="content_block" style="display: none;">
+    	<p>Блок скрытого текста...</p>
+    </div> <script src="/js/jquery.min.js"></script>
+    <script>$(document).ready(function(){
+        $('.content_toggle').click(function(){
+                $('.content_block').slideToggle(300, function(){
+                if ($(this).is(':hidden')) {
+                $('.content_toggle').html('Показать текст');
+                	$('.content_toggle').removeClass('open');
+                    } else {
+                $('.content_toggle').html('Скрыть текст');
+                $('.content_toggle').addClass('open');
+}	
+});	
+return false;	});});
+</script>

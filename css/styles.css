@@ -57,7 +57,7 @@ body {
     background-color: black;
 }
 
-.container {
+.wrapper {
     max-width: 1280px;
     margin: 0 auto;
 }
@@ -311,7 +311,7 @@ h2 {
 }
 
 .list2__title {
-    padding-top: 136px;
+    padding-top: 85px;
     margin-bottom: 50px;
 }
 
@@ -323,6 +323,10 @@ h2 {
     line-height: 40px;
 }
 
+.uslugi__title {
+    padding-top: 85px;
+    margin-bottom: 25px;
+}
 .list__content {
     display: flex;
 }
@@ -338,7 +342,10 @@ h2 {
 .list__content2 {
     display: flex;
     width: 75%;
+}
+.scale__i2{
     object-fit: contain;
+    width: 100%;
 }
 
 .font__18-700__yellow {
@@ -407,8 +414,9 @@ h2 {
     padding: 10px 16px;
     transition: all 0.3s ease 0s;
     margin-bottom: 40px;
+    text-decoration: none;
 }
-.button__light:hover {
+.list2__button:hover {
     opacity: 0.8;
   }
   .font__14-700__white{
@@ -418,6 +426,67 @@ h2 {
     font-weight: 700;
     line-height: normal;
   }
+  .uslugi__0{
+    display: flex;
+    flex-direction: column;
+  }
+  .uslugi__1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 30px;
+    /* margin-bottom: 25px; */
+  }
+  .uslugi__1-1{
+    display: flex;
+    position: relative;
+    max-width: 855px;
+  }
+  .uslugi__img1{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .font__16-700__extrabold__black{
+    color: #535353;
+    font-family: "MontserratAlternates-ExtraBold";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+  .uslugi__text1{
+    margin-left: 90px;
+  }
+  .uslugi__text__none{
+    display: none;
+    margin-left: 90px;
+    max-width: 855px;
+  }
+  .uslugi__text__block{
+    display: block;
+  }
+  .uslugi__img__rectangle{
+    display: block;
+    /* display: none; */
+    transform: rotate(-180deg);
+    margin: 0 10px;
+    margin-top: 10px;
+  }
+  .img__rectangle__none{
+    display: none;
+  }
+  .uslugi__img__x{
+    display: none;
+    font-family: "MontserratAlternates-ExtraBold";
+    font-size: 26px;
+    color: #FFC94F;
+    margin: 0 10px;
+    margin-top: 10px;
+  }
+  .img__x__block{
+    display: block;
+  }
+
 
 
 
@@ -429,26 +498,25 @@ h2 {
 
 
 @media (max-width: 1315px) {
-    .header__nav {
-        margin: 0 15px;
+    .wrapper{
+        padding-left: 10px;
+        padding-right: 10px;
     }
-
+    /* .header__nav {
+        margin: 0 15px;
+    } */
     .lighthouse__main1_1 {
         margin-right: auto;
-
     }
-
     .lighthouse__main1 {
         padding-left: 20px;
-        padding-top: 2%;
     }
-
     .lighthouse__main2 {
         padding-top: 10px;
     }
-
+/* 
     .list2__container {
         padding-left: 20px;
         padding-right: 20px;
-    }
+    } */
 }
