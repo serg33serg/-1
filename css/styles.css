@@ -142,35 +142,32 @@ body {
     border-top: 6px solid rgb(0, 0, 0);
     /* Добавляем треугольник */
 }
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
+.spisok{
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    /* top: 30px; */
-    left: 12px;
+    top: 25px;
+    left: -120px;
+    width: 177px;
     background-color: #FFC94F;
-    min-width: 220px;
-    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    color: #FFF;
+    border-radius: 10px;
+    list-style-type: disc;
+    list-style-position: outside;
+    /* border: solid 3px cornsilk; */
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+.menu__element{
+    display: none;
+    margin-left: 40px;
+    margin-bottom: 20px;
 }
-
 .header__pochta {
     display: block;
     position: relative;
     padding-left: 30px;
     margin-right: 10px;
 }
-
 .header__pochta::before {
     content: "";
     position: absolute;
@@ -181,12 +178,10 @@ body {
     background-image: url(../img/email.png);
     background-size: 21px 21px;
 }
-
 /* Адаптив блока с телефоном */
 .header__tel__rect {
     max-width: 100%;
 }
-
 /* Объединяем прямоугольник с содержимым */
 .tel__rect {
     display: flex;
@@ -922,12 +917,7 @@ h2 {
 .class__yellow{
     color: #FFC94F;
 }
-.menu__element{
-    display: none;
-}
-.spisok{
-    opacity: 1;
-}
+
 
 
 

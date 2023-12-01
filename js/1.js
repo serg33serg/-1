@@ -44,16 +44,16 @@ $(document).ready(function(){
 // ================================================================
 // footer ссылки
 $(function(){
-	$('footer a, header a').mouseenter(function(){
+	$('.footer a, .header__nav__nav li > a').mouseenter(function(){
 	$(this).css("color", "#FFC94F")})})
-	$('footer a, header a').mouseleave(function(){
+	$('.footer a, .header__nav__nav li > a').mouseleave(function(){
 		$(this).css("color", "#FFF")})
 
 // ================================================================
 // Выпадающее меню
 $(function(){
 	let flag=false
-$('.spisok').click(function() {
+$('.podborka__oval').click(function() {
 	if(!flag){
 		$('.menu__element').slideDown();
 	}else{
