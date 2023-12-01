@@ -1,6 +1,7 @@
 // КАТАЛОГ
 //блок 1
 $(document).ready(function(){
+	
 	$('.content_toggle').click(function(){
 		$('.content_block').slideToggle(300, function(){
 			if ($(this).is(':hidden')) {
@@ -15,6 +16,7 @@ $(document).ready(function(){
 	});
 });
 
+// ========================================================
 // УСЛУГИ
 // блок 1
  $(function(){
@@ -38,3 +40,24 @@ $(document).ready(function(){
 		
 	})
 })
+
+// ================================================================
+// footer ссылки
+$(function(){
+	$('footer a, header a').mouseenter(function(){
+	$(this).css("color", "#FFC94F")})})
+	$('footer a, header a').mouseleave(function(){
+		$(this).css("color", "#FFF")})
+
+// ================================================================
+// Выпадающее меню
+$(function(){
+	let flag=false
+$('.spisok').click(function() {
+	if(!flag){
+		$('.menu__element').slideDown();
+	}else{
+		$('.menu__element').slideUp();
+	}
+	flag=!flag;
+	})})
