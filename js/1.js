@@ -44,9 +44,9 @@ $(document).ready(function(){
 // ================================================================
 // footer ссылки
 $(function(){
-	$('.footer a, .header__nav__nav li > a').mouseenter(function(){
+	$('.footer a, .header__nav__nav > li > a').mouseenter(function(){
 	$(this).css("color", "#FFC94F")})})
-	$('.footer a, .header__nav__nav li > a').mouseleave(function(){
+	$('.footer a, .header__nav__nav > li > a').mouseleave(function(){
 		$(this).css("color", "#FFF")})
 
 // ================================================================

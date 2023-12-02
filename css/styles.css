@@ -156,6 +156,10 @@ body {
     list-style-position: outside;
     /* border: solid 3px cornsilk; */
 }
+.spisok__text{
+    color: #FFF;
+    text-decoration: none;
+}
 
 .menu__element{
     display: none;
@@ -178,43 +182,16 @@ body {
     background-image: url(../img/email.png);
     background-size: 21px 21px;
 }
-/* Адаптив блока с телефоном */
-.header__tel__rect {
-    max-width: 100%;
-}
-/* Объединяем прямоугольник с содержимым */
-.tel__rect {
+
+.tel-1{
     display: flex;
-    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;  
     width: 195px;
+    min-width: 150px;
     height: 44px;
-    background-image: url(../img/Rectangle28-2.png);
-    background-repeat: no-repeat;
-}
-
-/* Смещение телефона внутри прямоугольника */
-.header__tel-1 {
-    position: absolute;
-    left: 20px;
-    top: 12px;
-}
-
-/* Телефон с номером */
-.header__tel-2 {
-    display: block;
-    position: relative;
-    padding-left: 30px;
-}
-
-.header__tel-2::before {
-    content: "";
-    position: absolute;
-    left: 0px;
-    top: -2px;
-    width: 21px;
-    height: 21px;
-    background-image: url(../img/Phone1.png);
-    background-size: 21px 21px;
+    border: solid; 
 }
 
 .lighthouse__main {
@@ -480,26 +457,40 @@ h2 {
 .uslugi__text__block {
     display: block;
 }
-
-.uslugi__img__rectangle {
-    display: block;
-    /* display: none; */
-    transform: rotate(-180deg);
-    margin: 0 10px;
-    margin-top: 10px;
+.rect__padd{
+    position: relative;
+    padding-top: 6px; 
 }
-
+.uslugi__img__rectangle{
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0px 10px 15px;
+    border-color: transparent transparent transparent #FFC94F;
+    transform: rotate(90deg);
+    cursor: pointer;
+    margin-top: 15px;
+    margin-right: 10px;
+    padding-left: 20px;
+    /* padding-top: 10px; */
+}
 .img__rectangle__none {
     display: none;
 }
 
 .uslugi__img__x {
     display: none;
+    position: absolute;
+    top: -6px;
+    left: -42px;
     font-family: "MontserratAlternates-ExtraBold";
     font-size: 27px;
-    color: yellow;
+    color: #FFC94F;
     margin: 0 10px;
     margin-top: 10px;
+    cursor: pointer;
+    margin-left: 5px;
 }
 
 .img__x__block {
@@ -513,6 +504,8 @@ h2 {
 
 .wrapper__new {
     display: flex;
+    /* flex-wrap: wrap;
+    align-content: flex-end; */
     gap: 40px;
     margin-bottom: 65px;
 }
@@ -531,8 +524,9 @@ h2 {
 }
 
 .new__img2-2 {
-    max-width: 45%;
-    width: 100%;
+    /* max-width: 45%; */
+    width: 45%;
+    height: 45%;
     margin-top: -65px;
 }
 
@@ -583,11 +577,16 @@ h2 {
     font-weight: 700;
     line-height: 21px;
 }
-
+.new__button2 {
+    display: flex;
+    padding-top: 35px;
+    width: 100%;
+}
 .new__button {
     display: flex;
     flex-wrap: wrap;
-    width: 245px;
+    max-width: 245px;
+    width: 100%;
     height: 45px;
     background-color: rgba(61, 79, 100, 1);
     justify-content: center;
@@ -603,10 +602,7 @@ h2 {
     opacity: 0.8;
 }
 
-.new__button2 {
-    display: inline;
-    padding-top: 35px;
-}
+
 
 .end__button {
     display: flex;
@@ -648,6 +644,7 @@ h2 {
 
 .end__img1__x {
     margin-left: -40px;
+    padding-left: 20px;
 }
 
 .end__text1 {
@@ -866,6 +863,9 @@ h2 {
     padding-top: 70px;
     margin-bottom: 50px;
 }
+.logo__scale{
+    width: 100%;
+}
 .footer__col2:hover{
     color: #FFC94F;
 }
@@ -875,6 +875,7 @@ h2 {
     gap: 15px;
     padding-top: 50px;
     margin-bottom: 50px;
+    padding-left: 20px;
 }
 
 .footer__col3 {
@@ -883,6 +884,7 @@ h2 {
     gap: 15px;
     padding-top: 50px;
     margin-bottom: 50px;
+    padding-left: 10px;
 }
 
 .footer__col4 {
@@ -892,6 +894,14 @@ h2 {
     gap: 15px;
     padding-top: 50px;
     margin-bottom: 50px;
+    padding-left: 10px;
+}
+.col4__col__1{
+    display: flex;
+}
+.col4__col__2{
+    display: flex;
+    flex-direction: column;
 }
 .pravka__coord{
     position: absolute;
@@ -927,16 +937,19 @@ h2 {
 
 
 
-
 @media (max-width: 1315px) {
     .wrapper {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
-
-    /* .header__nav {
-        margin: 0 15px;
-    } */
+    .wrapper__new {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .wrapper__end {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     .lighthouse__main1_1 {
         margin-right: auto;
     }
@@ -948,10 +961,8 @@ h2 {
     .lighthouse__main2 {
         padding-top: 10px;
     }
+}
 
-    /* 
-    .list2__container {
-        padding-left: 20px;
-        padding-right: 20px;
-    } */
+@media (max-width: 860px) {
+
 }
