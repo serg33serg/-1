@@ -61,3 +61,25 @@ $('.podborka__oval').click(function() {
 	}
 	flag=!flag;
 	})})
+
+	// =======================================
+	// Бургер меню выезжает
+	$(function(){
+$('.header__burger').click(function(){
+$('.nav__block2').show(500);
+$('.header__nav').hide(500);
+
+})
+$('.nav__close').click(function(){
+	$('.nav__block2').hide(500);
+	$('.header__nav').show(500);
+})
+	
+})
+$(window).resize(function() {
+	 	if (window.innerWidth >= 860) {
+			$('.nav__block2').hide(500);
+			$('.header__nav').show(500);
+	}})
+	
+

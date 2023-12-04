@@ -61,6 +61,10 @@ body {
     max-width: 1280px;
     margin: 0 auto;
 }
+.wrapper__header{
+    display: flex;
+    display: block;
+}
 
 .header__nav {
     display: flex;
@@ -68,7 +72,9 @@ body {
     justify-content: space-between;
     padding: 15px 0;
 }
-
+.header__nav__none{
+    display: none;
+}
 /* .header__logo{
     display: flex;
 } */
@@ -77,6 +83,21 @@ body {
     width: 100%;
     margin-right: 10px;
 }
+.nav__block1{
+    display: block;
+}
+.nav__block2{
+    display: none;
+    width: 100%;
+    background-color: #000000;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-size: 18px;
+    z-index: 10;
+}
+.nav__block2__yes{
+    display: block;
+}
 
 .header__nav__nav {
     display: flex;
@@ -84,6 +105,22 @@ body {
     align-items: center;
     gap: 10px;
     margin-right: 10px;
+}
+.header__nav__nav2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-right: 10px;
+}
+.nav__close{
+    display: flex;
+    flex-direction: row-reverse;
+    font-family: "MontserratAlternates-Bold";
+    font-size: 36px;
+    color: #FFC94F;
+    padding-right: 40px;
+    margin-bottom: -30px;
 }
 
 .font__14-700 {
@@ -182,7 +219,9 @@ body {
     background-image: url(../img/email.png);
     background-size: 21px 21px;
 }
-
+.tel__block{
+    display: block;
+}
 .tel-1{
     display: flex;
     flex-wrap: wrap;
@@ -194,10 +233,35 @@ body {
     border: solid; 
 }
 
+
 .lighthouse__main {
     display: flex;
 }
-
+.header__burger{
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 28px;
+    margin-right: 10px;
+}
+.burger__line{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #FFF;
+    left: 0px;
+}
+.line1{
+    top: 0px;
+}
+.line2{
+    top: 50%;
+    transform: translateY(-50%);
+}
+.line3{
+    bottom: 0px;
+}
 .lighthouse__main1 {
     display: flex;
     justify-content: flex-end;
@@ -964,5 +1028,64 @@ h2 {
 }
 
 @media (max-width: 860px) {
-
+    .header__burger{
+        display: block;
+    }
+    .nav__block1{
+        display: none;
+    }
+    
+    .spisok{
+        top: 32px;
+        width: 200px;
+        left: -143px;
+    }
+    .lighthouse__main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .lighthouse__main1 {
+        width: 100%;
+        justify-content: center;
+    }
+   
+    .lighthouse__main1_1 {
+    margin-right: 0;
+    }
+    .lighthouse__main2 {
+        width: 85%;
+    }
+    .list__content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .list2__title{
+        text-align: center;
+    }
+    .list__content1 {
+        width: 100%;
+        align-items: center;
+    }
+    .list__content2 {
+        display: flex;
+        width: 85%;
+    }
+    .uslugi__title{
+        text-align: center; 
+    }
+    .new__title{
+        text-align: center; 
+    }
+    .new__img2 {
+        align-items: center;
+    }
+    .new__button2 {
+        justify-content: center;
+    }
+    .new__img2-2 {
+        margin-top: 0px;
+    }
+    .new__img2-1 {
+        padding-top: 80px;
+    }
 }
