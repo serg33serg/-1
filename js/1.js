@@ -83,17 +83,8 @@ $(window).resize(function() {
 	}})
 	
 	// ===============================================
-	// При 650 все в один вертикал
-	$(function(){
-		if (window.innerWidth <= 650) {
-			$('.tel__block').hide();
-			$('.header__pochta').hide();
-			$('.header__pochta::before').hide();
-		
-	}})
-	$(function(){
-	if (window.innerWidth >= 650) {
-		$('.tel__block2').hide();
-		$('.header__pochta2').hide();
-		$('.header__pochta::before2').hide();
-	}})
+
+	   
+	
+	
+
