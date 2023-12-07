@@ -82,9 +82,101 @@ $(window).resize(function() {
 			$('.header__nav').show(500);
 	}})
 	
-	// ===============================================
+// ===============================================
+// Страница 2 - выбор фото
+$(function(){
+	$('#a1').click(function(){
+	$('.b1').hide(250).attr('src', './img/img-i2-1.jpg').show(250);
+	$('.marker2_i1').removeClass('marker2_i1');
+	$('#a1').addClass('marker2_i1');
+		})})
+	$('#a2').click(function(){
+	$('.b1').hide(250).attr('src', './img/img-i2-2.jpg').show(250);
+	$('.marker2_i1').removeClass('marker2_i1');
+	$('#a2').addClass('marker2_i1');
+		})   
+	$('#a3').click(function(){
+	$('.b1').hide(250).attr('src', './img/img-i2-3.jpg').show(250);
+	$('.marker2_i1').removeClass('marker2_i1');
+	$('#a3').addClass('marker2_i1');
+		})   
+	$('#a4').click(function(){
+	$('.b1').hide(250).attr('src', './img/img-i2-4.jpg').show(250);
+	$('.marker2_i1').removeClass('marker2_i1');
+	$('#a4').addClass('marker2_i1');
+		})
+	$('#a5').click(function(){
+	$('.b1').hide(250).attr('src', './img/img-i2-5.jpg').show(250);
+	$('.marker2_i1').removeClass('marker2_i1');
+	$('#a5').addClass('marker2_i1');
+		})   
+	$('#a6').click(function(){
+	$('.b1').hide(250).attr('src', './img/img-i2-6.jpg').show(250);
+	$('.marker2_i1').removeClass('marker2_i1');
+	$('#a6').addClass('marker2_i1');
+		})   	
 
-	   
-	
-	
+		// ===============================================
+// Страница 2 - выбор текста
+$(function(){
+// запросили t1
+	$('#t1').click(function(){
+	$('.marker1_i1').removeClass('marker1_i1');
+// добавили текущий маркер
+	$('#t1').addClass('marker1_i1');
+// удалили все четыре текста
+	$('.text1_i1').hide(1000);
+	$('.text2_i1').hide(1000);
+	$('.text3_i1').hide(1000);
+	$('.text4_i1').hide(1000);
+// добавили текущий текст
+	$('.text1_i1').show(1000);
+	})})
 
+$(function(){
+	// запросили t2
+	$('#t2').click(function(){
+		// удалили старый маркер
+			$('.marker1_i1').removeClass('marker1_i1');
+		// добавили текущий маркер
+			$('#t2').addClass('marker1_i1');
+		// удалили все четыре текста
+			$('.text1_i1').hide(1000);
+			$('.text2_i1').hide(1000);
+			$('.text3_i1').hide(1000);
+			$('.text4_i1').hide(1000);
+		// добавили текущий текст
+			$('.text2_i1').show(1000);
+	})})
+
+	$(function(){
+		// запросили t3
+		$('#t3').click(function(){
+			// удалили старый маркер
+				$('.marker1_i1').removeClass('marker1_i1');
+			// добавили текущий маркер
+				$('#t3').addClass('marker1_i1');
+			// удалили все четыре текста
+				$('.text1_i1').hide(1000);
+				$('.text2_i1').hide(1000);
+				$('.text3_i1').hide(1000);
+				$('.text4_i1').hide(1000);
+			// добавили текущий текст
+				$('.text3_i1').show(1000);
+		})})
+
+	$(function(){
+	// запросили t4
+	$('#t4').click(function(){
+		// удалили старый маркер
+			$('.marker1_i1').removeClass('marker1_i1');
+		// добавили текущий маркер
+			$('#t4').addClass('marker1_i1');
+		// удалили все четыре текста
+			$('.text1_i1').hide(1000);
+			$('.text2_i1').hide(1000);
+			$('.text3_i1').hide(1000);
+			$('.text4_i1').hide(1000);
+		// добавили текущий текст
+			$('.text4_i1').show(1000);
+	})})
