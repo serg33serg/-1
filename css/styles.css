@@ -1515,77 +1515,8 @@ color: white;
         grid-column-end: 3;
         grid-row-start: 3;
         grid-row-end: 4;
-      }    
-      .marker1_i1 {
-        background: white;
-        color: #3D4F64;
+      }   
     }
-    .nav_i1 {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: 30px 500px 500px 500px 500px 500px;
-        gap: 10px;
-        margin-bottom: 20px;
-        padding-left: 0px;
-    }
-    .marker1_i1{
-        display: none;
-    }
-    .box1_i1 {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
-      }
-      .box2_i1 {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
-      }
-      .box3_i1 {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 3;
-        grid-row-end: 4;
-      }
-      .box4_i1 {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 4;
-        grid-row-end: 5;
-      }
-      .box5_i1 {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 5;
-        grid-row-end: 6;
-      }
-
-
-
-
-    .mark1_i1 {
-        font-family: "MontserratAlternates-SemiBold";
-        color: #535353;
-        font-size: 14px;
-        font-weight: 400;
-        height: 100%;
-        padding-left: 10px;
-        padding-right: 10px;
-        display: flex;
-        justify-content: flex-start
-        /* align-items: center;
-        justify-content: center;
-        text-align: center; */
-    }
-    .text1__active_i1{
-        display: block;
-    }
-    .text1_i1{
-        display: none;
-    }
-
 
 
 
