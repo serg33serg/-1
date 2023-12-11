@@ -330,3 +330,41 @@ $(function(){
 		$('.b444_i1').hide();
 		$('.b44_i1').show();
 })})})
+
+// ===============================================
+// Страница 3 - фильтр показания ползунков
+// Мощность
+$('.result').html($('#range1').val());
+$(document).on('input change', '#range1', function() {
+  $('.result').html($(this).val());
+});
+// Световой поток LED
+$('.result2').html($('#range2').val());
+$(document).on('input change', '#range2', function() {
+  $('.result2').html($(this).val());
+});
+// Угол рассеивания
+$('.result3').html($('#range3').val());
+$(document).on('input change', '#range3', function() {
+  $('.result3').html($(this).val());
+});
+// Минимальная цена
+$('.result4').html($('#range4').val());
+$(document).on('input change', '#range4', function() {
+  $('.result4').html($(this).val());
+});
+// ===================================================
+// Выпадающее меню 2
+$(function(){
+	let flag2=false
+$('.podborka__oval_i3').click(function() {
+	if(!flag2){
+		$('.menu__element_i3').slideDown();
+	}else{
+		$('.menu__element_i3').slideUp();
+	}
+	flag2=!flag2;
+	})})
+
+	// =======================================
+	

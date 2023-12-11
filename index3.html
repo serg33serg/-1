@@ -212,75 +212,355 @@
                     <!--Колонка фильтров  -->
                     <div class="contain2_i3">
                         <div class="contain22_i3">
-
                             <p class="filtr_i3">
                                 Фильтр
                             </p>
+                            
+
+
+
+
+<!-- Выпадающий список2 -->
+<div class="spisok2_i3">
+    <div class="header__podborka_i3">
+        <p class="font__14-700 font__14-700__yellow">
+            Выбрать тип<br> светильника
+        </p>
+        <!-- Выпадающий блок списка -->
+        <div class="podborka__oval_i3">
+            <div class="podborka__oval__treugol_i3">
+            </div>
+            <ul class="spisok_i3">
+                <li style="padding-top: 20px;" class="menu__element_i3">
+                    <a class="spisok__text" href="">Трековые светильники</a>
+                </li>
+                <li class="menu__element_i3"> <a class="spisok__text" href="">Встроенные
+                        светильники</a></li>
+                <li class="menu__element_i3"><a class="spisok__text" href="">Профильные
+                        светильники</a></li>
+                <li class="menu__element_i3"><a class="spisok__text" href="">Фигурные
+                        светильники</a></li>
+                <li class="menu__element_i3"><a class="spisok__text" href="">Светильники
+                        Армстронг</a></li>
+            </ul>
+        </div>
+    </div> 
+</div><!-- spisok2_i3 -->
+
+
+
+
+
+
                             <p class="power1_i3">
                                 Мощность
                             </p>
+                            <!-- Ползунок мощность -->
                             <div class="power2_i3">
-                        
-                                    <input  type="range" min="10" max="500" value="350"
-                                        name="range" step="1">
-                              
-                                value
+                                <input class="pow2__i3" id="range1" type="range" min="10" max="500" value="350" name="range" step="1">
+                                <div class="result">
+                                </div>
+                            </div>
+                            <p class="power1_i3">
+                                Световой поток LED
+                            </p>
+                            <!-- Ползунок световой поток -->
+                            <div class="power2_i3">
+                                <input class="pow2__i3" id="range2" type="range" min="100" max="100000" value="50000" name="range"
+                                    step="10">
+                                <div class="result2">
+                                </div>
+                            </div>
+                            <p class="power1_i3">
+                                Угол рассеивания
+                            </p>
+                            <!-- Ползунок угол рассеивания -->
+                            <div class="power2_i3">
+                                <input class="pow2__i3" id="range3" type="range" min="10" max="180" value="90" name="range" step="1">
+                                <div class="result3">
+                                </div>
+                            </div>
+                            <p class="power1_i3">
+                                Минимальная цена
+                            </p>
+                            <!-- Ползунок минимальная цена -->
+                            <div class="power2_i3">
+                                <input class="pow2__i3" id="range4" type="range" min="1500" max="25000" value="12000" name="range"
+                                    step="1">
+                                <div class="result4">
+                                </div>
+                            </div>
+                            <div class="power3_i3">
+                                <p class="power4_i3">
+                                    Сбросить
+                                </p>
+                                <div class="button__filtr_i3 font__14-600__black">
+                                    Применить
+                                </div>
                             </div>
                         </div>
+                    </div><!-- Конец contain2_i3 -->
+
+                <!-- Колонка каталога -->
+                <div class="contain3_i3">
+                    <!-- Первый товар -->
+                    <div class="tovar1_i3">
+                        <p class="filtr_i3">
+                            Новинки
+                        </p>
+                        <div class="tovar__img1_i3">
+                            <img class="img0_i3" src="./img/i4.png" alt="">
+                        </div>
+                        <p class="tovar__text_i3 font__14-700__grey">
+                            Дизайнерский светильник изготавливаемый по проекту
+                        </p>
+                        <div class="new__ul">
+                            <ul class="new__ul2">
+                                <li class="new__text1-1">
+                                    <span class="li__text"> Длина до 3м.</span>
+                                </li>
+                                <li class="new__text1-1">
+                                    <span class="li__text">Углы поворота между секторами по проекту.</span>
+                                </li>
+                                <li class="new__text1-1">
+                                    <span class="li__text"> Мощность рассчитывается индивидуально.</span>
+                                </li>
+                                </li>
+                            </ul>
+                        </div>
+                        <span class="cat__cena_i3 font__20-700__black">41500 р</span>
+                        <div class="new__button2">
+                            <a class="new__button" href="">Подробнее</a>
+                        </div>
                     </div>
-                    <!-- Колонка каталога -->
-                    <div class="contain3_i3">
+                    <!-- Второй товар -->
+                    <div class="tovar1_i3">
 
+                        <div class="tovar__img2_i3">
+                            <img class="img_i3"  src="./img/i3.png" alt="">
+                        </div>
+                        <p class="tovar__text2_i3 font__14-700__grey">
+                            Дизайнерский светильник изготавливаемый по проекту
+                        </p>
+                        <div class="new__ul">
+                            <ul class="new__ul2">
+                                <li class="new__text1-1">
+                                    <span class="li__text"> Длина до 3м.</span>
+                                </li>
+                                <li class="new__text1-1">
+                                    <span class="li__text">Углы поворота между секторами по проекту.</span>
+                                </li>
+                                <li class="new__text1-1">
+                                    <span class="li__text"> Мощность рассчитывается индивидуально.</span>
+                                </li>
+                                </li>
+                            </ul>
+                        </div>
+                        <span class="cat__cena_i3 font__20-700__black">21800 р</span>
+                        <div class="new__button2">
+                            <a class="new__button" href="">Подробнее</a>
+                        </div>
                     </div>
+                    <!-- Третий товар -->
+                    <div class="tovar1_i3">
+                        <div class="tovar__img2_i3">
+                            <img class="img_i3" src="./img/i3.png" alt="">
+                        </div>
+                        <p class="tovar__text2_i3 font__14-700__grey">
+                            Дизайнерский светильник изготавливаемый по проекту
+                        </p>
+                        <div class="new__ul">
+                            <ul class="new__ul2">
+                                <li class="new__text1-1">
+                                    <span class="li__text"> Длина до 3м.</span>
+                                </li>
+                                <li class="new__text1-1">
+                                    <span class="li__text">Углы поворота между секторами по проекту.</span>
+                                </li>
+                                <li class="new__text1-1">
+                                    <span class="li__text"> Мощность рассчитывается индивидуально.</span>
+                                </li>
+                                </li>
+                            </ul>
+                        </div>
+                        <span class="cat__cena_i3 font__20-700__black">37900 р</span>
+                        <div class="new__button2">
+                            <a class="new__button" href="">Подробнее</a>
+                        </div>
+                    </div>
+                    <!-- Четвертый товар -->
 
+                    <div class="tovar1_i3">
+                        <p class="filtr_i3">
+                            Весь каталог
+                        </p>
+                        <div class="tovar__img1_i3">
+                            <img class="img0_i3" src="./img/i4.png" alt="">
+                        </div>
+                        <p class="tovar__text_i3 font__14-700__grey">
+                            Дизайнерский светильник изготавливаемый по проекту
+                        </p>
+                        <div class="new__ul">
+                            <ul class="new__ul2">
+                                <li class="new__text1-1">
+                                    <span class="li__text"> Длина до 3м.</span>
+                                </li>
+                                <li class="new__text1-1">
+                                    <span class="li__text">Углы поворота между секторами по проекту.</span>
+                                </li>
+                                <li class="new__text1-1">
+                                    <span class="li__text"> Мощность рассчитывается индивидуально.</span>
+                                </li>
+                                </li>
+                            </ul>
+                        </div>
+                        <span class="cat__cena_i3 font__20-700__black">41500 р</span>
+                        <div class="new__button2">
+                            <a class="new__button" href="">Подробнее</a>
+                        </div>
+                    </div>
+                    <!-- Пятый товар -->
+                    <div class="tovar1_i3">
 
+                        <div class="tovar__img2_i3">
+                            <img class="img_i3" src="./img/i3.png" alt="">
+                        </div>
+                        <p class="tovar__text2_i3 font__14-700__grey">
+                            Дизайнерский светильник изготавливаемый по проекту
+                        </p>
+                        <div class="new__ul">
+                            <ul class="new__ul2">
+                                <li class="new__text1-1">
+                                    <span class="li__text"> Длина до 3м.</span>
+                                </li>
+                                <li class="new__text1-1">
+                                    <span class="li__text">Углы поворота между секторами по проекту.</span>
+                                </li>
+                                <li class="new__text1-1">
+                                    <span class="li__text"> Мощность рассчитывается индивидуально.</span>
+                                </li>
+                                </li>
+                            </ul>
+                        </div>
+                        <span class="cat__cena_i3 font__20-700__black">21800 р</span>
+                        <div class="new__button2">
+                            <a class="new__button" href="">Подробнее</a>
+                        </div>
+                    </div>
+                    <!-- Шестой товар -->
+                    <div class="tovar1_i3">
+                        <div class="tovar__img2_i3">
+                            <img class="img_i3" src="./img/i3.png" alt="">
+                        </div>
+                        <p class="tovar__text2_i3 font__14-700__grey">
+                            Дизайнерский светильник изготавливаемый по проекту
+                        </p>
+                        <div class="new__ul">
+                            <ul class="new__ul2">
+                                <li class="new__text1-1">
+                                    <span class="li__text"> Длина до 3м.</span>
+                                </li>
+                                <li class="new__text1-1">
+                                    <span class="li__text">Углы поворота между секторами по проекту.</span>
+                                </li>
+                                <li class="new__text1-1">
+                                    <span class="li__text"> Мощность рассчитывается индивидуально.</span>
+                                </li>
+                                </li>
+                            </ul>
+                        </div>
+                        <span class="cat__cena_i3 font__20-700__black">37900 р</span>
+                        <div class="new__button2">
+                            <a class="new__button" href="">Подробнее</a>
+                        </div>
+                    </div>
+                    <!-- Седьмой товар -->
+                    <div class="tovar1_i3">
 
-                </div><!-- Конец contain1 -->
-                <!-- Набор текстов -->
-                <!-- Текст1 -->
-                <div class="text1_i1 box2_i1">
+                        <div class="tovar__img1_i3 padd30_i3">
+                            <img class="img0_i3" src="./img/i4.png" alt="">
+                        </div>
+                        <p class="tovar__text_i3 font__14-700__grey">
+                            Дизайнерский светильник изготавливаемый по проекту
+                        </p>
+                        <div class="new__ul">
+                            <ul class="new__ul2">
+                                <li class="new__text1-1">
+                                    <span class="li__text"> Длина до 3м.</span>
+                                </li>
+                                <li class="new__text1-1">
+                                    <span class="li__text">Углы поворота между секторами по проекту.</span>
+                                </li>
+                                <li class="new__text1-1">
+                                    <span class="li__text"> Мощность рассчитывается индивидуально.</span>
+                                </li>
+                                </li>
+                            </ul>
+                        </div>
+                        <span class="cat__cena_i3 font__20-700__black">41500 р</span>
+                        <div class="new__button2">
+                            <a class="new__button" href="">Подробнее</a>
+                        </div>
+                    </div>
+                    <!-- Восьмой товар -->
+                    <div class="tovar1_i3">
 
-
-
-                </div>
-                <!-- Текст2 -->
-                <div class="text2_i1">
-
-
-
-
-                </div>
-                <!-- Текст3 -->
-                <div class="text3_i1">
-
-
-
-
-                </div>
-                <!-- Текст4 -->
-                <div class="text4_i1">
-
-
-
-
-                </div>
-                <!-- Текст5 -->
-                <div class="text5_i1">
-
-
-
-
-                </div>
-                <!-- Текст6 -->
-                <div class="text6_i1">
-
-
-
-
-                </div>
-            </div><!-- Конец novisibily1 -->
-
-
+                        <div class="tovar__img2_i3">
+                            <img class="img_i3" src="./img/i3.png" alt="">
+                        </div>
+                        <p class="tovar__text2_i3 font__14-700__grey">
+                            Дизайнерский светильник изготавливаемый по проекту
+                        </p>
+                        <div class="new__ul">
+                            <ul class="new__ul2">
+                                <li class="new__text1-1">
+                                    <span class="li__text"> Длина до 3м.</span>
+                                </li>
+                                <li class="new__text1-1">
+                                    <span class="li__text">Углы поворота между секторами по проекту.</span>
+                                </li>
+                                <li class="new__text1-1">
+                                    <span class="li__text"> Мощность рассчитывается индивидуально.</span>
+                                </li>
+                                </li>
+                            </ul>
+                        </div>
+                        <span class="cat__cena_i3 font__20-700__black">21800 р</span>
+                        <div class="new__button2">
+                            <a class="new__button" href="">Подробнее</a>
+                        </div>
+                    </div>
+                    <!-- Девятый товар -->
+                    <div class="tovar1_i3">
+                        <div class="tovar__img2_i3">
+                            <img class="img_i3" src="./img/i3.png" alt="">
+                        </div>
+                        <p class="tovar__text2_i3 font__14-700__grey">
+                            Дизайнерский светильник изготавливаемый по проекту
+                        </p>
+                        <div class="new__ul">
+                            <ul class="new__ul2">
+                                <li class="new__text1-1">
+                                    <span class="li__text"> Длина до 3м.</span>
+                                </li>
+                                <li class="new__text1-1">
+                                    <span class="li__text">Углы поворота между секторами по проекту.</span>
+                                </li>
+                                <li class="new__text1-1">
+                                    <span class="li__text"> Мощность рассчитывается индивидуально.</span>
+                                </li>
+                                </li>
+                            </ul>
+                        </div>
+                        <span class="cat__cena_i3 font__20-700__black">37900 р</span>
+                        <div class="new__button2">
+                            <a class="new__button" href="">Подробнее</a>
+                        </div>
+                    </div>
+                </div><!-- Конец contain3_i3 -->
+            </div><!-- Конец contain1 -->
+            </div>
+        </div>
 
 
 
