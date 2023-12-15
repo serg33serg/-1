@@ -370,10 +370,10 @@ $('.podborka__oval_i3').click(function() {
 // Страница 4 - выбор текста
 $(function(){
 	// запросили t1_i4
-		$('#t1_4').click(function(){
+		$('#t1_i4').click(function(){
 		$('.marker1_i4').removeClass('marker1_i4');
 	// добавили текущий маркер
-		$('#t4').addClass('marker1_i4');
+		$('#t1_i4').addClass('marker1_i4');
 	// удалили все четыре текста
 		$('.text1_i4').hide(1000);
 		$('.text2_i4').hide(1000);
@@ -396,8 +396,7 @@ $(function(){
 				$('.text2_i4').hide(1000);
 				$('.text3_i4').hide(1000);
 				$('.text4_i4').hide(1000);
-				$('.text5_i4').hide(1000);
-				$('.text6_i4').hide(1000);
+				
 			// добавили текущий текст
 				$('.text2_i4').show(1000);
 		})})
@@ -421,7 +420,7 @@ $(function(){
 	
 		$(function(){
 		// запросили t4_i4
-		$('#t4').click(function(){
+		$('#t4_i4').click(function(){
 			// удалили старый маркер
 				$('.marker1_i4').removeClass('marker1_i4');
 			// добавили текущий маркер
