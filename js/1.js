@@ -1,21 +1,100 @@
 // КАТАЛОГ
-//блок 1
+//блок 1 - аккордеон списка 1
 $(document).ready(function(){
-	
-	$('.content_toggle').click(function(){
-		$('.content_block').slideToggle(300, function(){
-			if ($(this).is(':hidden')) {
-                $('.content_toggle').removeClass('on__yellow');
-                $('.content_toggle').addClass('on__black');
-			} else {
-                $('.content_toggle').removeClass('on__black');
-                $('.content_toggle').addClass('on__yellow');
-			}							
-		});
-		return false;
+
+// первый элемент списка
+$('.svet1').click(function(){
+	$('.on__yellow').removeClass('on__yellow').addClass('on__black2');
+	$('.svet22').hide();
+	$('.svet33').hide();
+	$('.svet44').hide();
+	$('.svet55').hide();
+	$('.svet11').slideToggle(300, function(){
+		if ($(this).is(':hidden')) {
+			$('.svet1').removeClass('on__yellow');
+			$('.svet1').addClass('on__black2');
+		} else {
+			$('.svet1').removeClass('on__black2');
+			$('.svet1').addClass('on__yellow');
+		}							
 	});
+	return false;
+});
+// второй элемент списка
+$('.svet2').click(function(){
+	$('.on__yellow').removeClass('on__yellow').addClass('on__black2');
+	$('.svet11').hide();
+	$('.svet33').hide();
+	$('.svet44').hide();
+	$('.svet55').hide();
+	$('.svet22').slideToggle(300, function(){
+		if ($(this).is(':hidden')) {
+			$('.svet2').removeClass('on__yellow');
+			$('.svet2').addClass('on__black2');
+		} else {
+			$('.svet2').removeClass('on__black2');
+			$('.svet2').addClass('on__yellow');
+		}							
+	});
+	return false;
 });
 
+// третий элемент списка
+$('.svet3').click(function(){
+	$('.on__yellow').removeClass('on__yellow').addClass('on__black2');
+	$('.svet11').hide();
+	$('.svet22').hide();
+	$('.svet44').hide();
+	$('.svet55').hide();
+	$('.svet33').slideToggle(300, function(){
+		if ($('.svet33').is(':hidden')) {
+			$('.svet3').removeClass('on__yellow');
+			$('.svet3').addClass('on__black2');
+		} else {
+			$('.svet3').removeClass('on__black2');
+			$('.svet3').addClass('on__yellow');
+		}							
+	});
+	return false;
+});
+// четвертый элемент списка
+$('.svet4').click(function(){
+	$('.on__yellow').removeClass('on__yellow').addClass('on__black2');
+	$('.svet11').hide();
+	$('.svet22').hide();
+	$('.svet33').hide();
+	$('.svet55').hide();
+	$('.svet44').slideToggle(300, function(){
+		if ($(this).is(':hidden')) {
+			$('.svet4').removeClass('on__yellow');
+			$('.svet4').addClass('on__black2');
+		} else {
+			$('.svet4').removeClass('on__black2');
+			$('.svet4').addClass('on__yellow');
+		}							
+	});
+	return false;
+});
+
+// пятый элемент списка
+$('.svet5').click(function(){
+	$('.on__yellow').removeClass('on__yellow').addClass('on__black2');
+	$('.svet11').hide();
+	$('.svet22').hide();
+	$('.svet33').hide();
+	$('.svet44').hide();
+	$('.svet55').slideToggle(300, function(){
+		if ($(this).is(':hidden')) {
+			$('.svet5').removeClass('on__yellow');
+			$('.svet5').addClass('on__black2');
+		} else {
+			$('.svet5').removeClass('on__black2');
+			$('.svet5').addClass('on__yellow');
+		}							
+	});
+	return false;
+});
+});
 // ========================================================
 // УСЛУГИ
 // блок 1
@@ -436,3 +515,26 @@ $(function(){
 		})})
 	
 	// ===============================================
+	// ========== Фото слайдер =========================
+	// Обработка левого нажатия
+	$(function(){
+		let prr=0;
+		let Array = [];
+		Array=['foto3_i6', 'foto4_i6', 'foto5_i6', 'foto6_i6', 'foto7_i6','foto8_i6', 'foto9_i6', 'foto10_i6', 'foto11_i6' ];
+		$('.left').click(function(){
+$('.'+ Array[prr]).fadeOut(1000);
+prr=prr-1;
+if (prr < 0) { 
+	prr=8;  }	
+	// let xr=$('.'+ Array[prr]);
+	$('.'+ Array[prr]).fadeIn(1000);
+	return prr;
+})
+$('.right').click(function(){
+	$('.'+ Array[prr]).fadeOut(1000);
+	prr=prr+1;
+	if (prr > 8) { 
+	prr=0;  }	
+	// let xr=$('.'+ Array[prr]);
+	$('.'+ Array[prr]).fadeIn(500);
+		})});
