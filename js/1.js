@@ -96,30 +96,112 @@ $('.svet5').click(function(){
 });
 });
 // ========================================================
-// УСЛУГИ
+// УСЛУГИ (раскрывающийся список аккордеон)
 // блок 1
  $(function(){
+	let flagg1=0;
+	let flagg2=0;
+	let flagg3=0;
  	$('#r1').click(function(){
- 		$('.uslugi__text__none').slideToggle(300, function(){
-			$('.uslugi__text__none').addClass('.uslugi__text__block');
-		})
-		var Pr1=$('#r1')
-		Pr1.hide();
-		var Pr2=$('.uslugi__img__x')
-		Pr2.show(500);
+		if (flagg1 != 0) {
+		$(flagg1).hide(300)
+		$(flagg2).hide();
+		$(flagg3).show();}
+flagg1=$('.uslugi__text__none');
+flagg2=$('.uslugi__img__x');
+flagg3=$('#r1');
+ 		$('.uslugi__text__none').slideToggle(300)
+		$('#r1').hide();
+		$('.uslugi__img__x').show(500);
 	})
+
 	$('.uslugi__img__x').click(function(){
-		$('.uslugi__text__none').slideToggle(300, function(){
-		$('.uslugi__text__none').removeClass('.uslugi__text__block');
-		})
-		Pr2=$('.uslugi__img__x')
-		Pr1=$('#r1')
-		Pr2.hide();
-		Pr1.show();
-		
+
+		$('.uslugi__text__none').slideToggle(300)
+		$('.uslugi__img__x').hide();
+		$('#r1').show();
 	})
+
+// блок2
+$('#r2').click(function(){
+	if (flagg1 != 0) {
+		$(flagg1).hide(300)
+		$(flagg2).hide();
+		$(flagg3).show();}
+flagg1=$('.uslugi__text__none2');
+flagg2=$('.uslugi__img__x2');
+flagg3=$('#r2');
+	$('.uslugi__text__none2').slideToggle(300)
+    $('#r2').hide();
+    $('.uslugi__img__x2').show(500);
 })
 
+$('.uslugi__img__x2').click(function(){
+   $('.uslugi__text__none2').slideToggle(300)
+   $('.uslugi__img__x2').hide();
+   $('#r2').show();
+})
+
+//блок3
+$('#r3').click(function(){
+	if (flagg1 != 0) {
+		$(flagg1).hide(300)
+		$(flagg2).hide();
+		$(flagg3).show();}
+flagg1=$('.uslugi__text__none3');
+flagg2=$('.uslugi__img__x3');
+flagg3=$('#r3');
+	$('.uslugi__text__none3').slideToggle(300)
+    $('#r3').hide();
+    $('.uslugi__img__x3').show(500);
+})
+
+$('.uslugi__img__x3').click(function(){
+   $('.uslugi__text__none3').slideToggle(300)
+   $('.uslugi__img__x3').hide();
+   $('#r3').show();
+})
+
+// блок4
+$('#r4').click(function(){
+	if (flagg1 != 0) {
+		$(flagg1).hide(300)
+		$(flagg2).hide();
+		$(flagg3).show();}
+flagg1=$('.uslugi__text__none4');
+flagg2=$('.uslugi__img__x4');
+flagg3=$('#r4');
+	$('.uslugi__text__none4').slideToggle(300)
+    $('#r4').hide();
+    $('.uslugi__img__x4').show(500);
+})
+
+$('.uslugi__img__x4').click(function(){
+   $('.uslugi__text__none4').slideToggle(300)
+   $('.uslugi__img__x4').hide();
+   $('#r4').show();
+})
+
+// блок5
+$('#r5').click(function(){
+	if (flagg1 != 0) {
+		$(flagg1).hide(300)
+		$(flagg2).hide();
+		$(flagg3).show();}
+flagg1=$('.uslugi__text__none5');
+flagg2=$('.uslugi__img__x5');
+flagg3=$('#r5');
+	$('.uslugi__text__none5').slideToggle(300)
+    $('#r5').hide();
+    $('.uslugi__img__x5').show(500);
+})
+
+$('.uslugi__img__x5').click(function(){
+   $('.uslugi__text__none5').slideToggle(300)
+   $('.uslugi__img__x5').hide();
+   $('#r5').show();
+})
+})
 // ================================================================
 // footer ссылки
 $(function(){
@@ -165,32 +247,32 @@ $(window).resize(function() {
 // Страница 2 - выбор фото
 $(function(){
 	$('#a1').click(function(){
-	$('.b1').hide(250).attr('src', './img/img-i2-1.jpg').show(250);
+	$('.b1').hide(500).attr('src', './img/img-i2-1.jpg').show(500);
 	$('.marker2_i1').removeClass('marker2_i1');
 	$('#a1').addClass('marker2_i1');
 		})})
 	$('#a2').click(function(){
-	$('.b1').hide(250).attr('src', './img/img-i2-2.jpg').show(250);
+	$('.b1').hide(500).attr('src', './img/img-i2-2.jpg').show(500);
 	$('.marker2_i1').removeClass('marker2_i1');
 	$('#a2').addClass('marker2_i1');
 		})   
 	$('#a3').click(function(){
-	$('.b1').hide(250).attr('src', './img/img-i2-3.jpg').show(250);
+	$('.b1').hide(500).attr('src', './img/img-i2-3.jpg').show(500);
 	$('.marker2_i1').removeClass('marker2_i1');
 	$('#a3').addClass('marker2_i1');
 		})   
 	$('#a4').click(function(){
-	$('.b1').hide(250).attr('src', './img/img-i2-4.jpg').show(250);
+	$('.b1').hide(500).attr('src', './img/img-i2-4.jpg').show(500);
 	$('.marker2_i1').removeClass('marker2_i1');
 	$('#a4').addClass('marker2_i1');
 		})
 	$('#a5').click(function(){
-	$('.b1').hide(250).attr('src', './img/img-i2-5.jpg').show(250);
+	$('.b1').hide(500).attr('src', './img/img-i2-5.jpg').show(500);
 	$('.marker2_i1').removeClass('marker2_i1');
 	$('#a5').addClass('marker2_i1');
 		})   
 	$('#a6').click(function(){
-	$('.b1').hide(250).attr('src', './img/img-i2-6.jpg').show(250);
+	$('.b1').hide(500).attr('src', './img/img-i2-6.jpg').show(500);
 	$('.marker2_i1').removeClass('marker2_i1');
 	$('#a6').addClass('marker2_i1');
 		})   	
@@ -432,6 +514,7 @@ $('.result4').html($('#range4').val());
 $(document).on('input change', '#range4', function() {
   $('.result4').html($(this).val());
 });
+
 // ===================================================
 // Выпадающее меню 2
 $(function(){
@@ -538,3 +621,89 @@ $('.right').click(function(){
 	// let xr=$('.'+ Array[prr]);
 	$('.'+ Array[prr]).fadeIn(500);
 		})});
+
+// =======================================================
+// Сброс ползунков фильтров
+	$('.power4_i3').click(function(){
+		$("#range1").val(10);
+		$('.result').html($('#range1').val());		
+		$("#range2").val(100);
+		$('.result2').html($('#range2').val());		
+		$("#range3").val(10);
+		$('.result3').html($('#range3').val());		
+		$("#range4").val(1500);
+		$('.result4').html($('#range4').val());		
+})
+
+// =======================================================
+// Меняем местами элементы грида (каталога)
+// и делаем это снова если произошли изменения
+// изменения в группе ползунков
+let ch=0;
+let ch2=2;
+$(document).on('input change',  function() {
+	ch=1;
+	});
+
+$('.button__filtr_i3').click(function(){
+if (ch==1) { ch=0;
+	if (ch2 % 2 === 0) {
+
+$(".am1_i3").before($(".am2_i3"));
+ch2=ch2+1;} else { 
+	$(".am1_i3").after($(".am2_i3"));
+	ch2=ch2+1;
+}
+}
+})
+// изменения в группе кнопок верхнего выбора
+let ch11=0;
+let ch12=2;
+let ch13=0;
+$('.nav_i3').click(function(){
+	ch11=1;
+
+	if (!$('#t1').hasClass('marker1_i1')) {
+
+if (ch11==1) { ch11=0;
+if (ch12 % 2 === 0) {
+console.log('ch12=', ch12);
+$(".am1_i3").before($(".am2_i3"));
+ch12=ch12+1;} else { 
+$(".am1_i3").after($(".am2_i3"));
+ch12=ch12+1;}
+}}
+})
+// ==================================================
+// =========стековое перемещение изображений=========
+// ====и поиск определенного элемента среди подобных==
+let imgg=$('.m3');
+let imgg2=imgg.attr("src");
+
+$('.galk1_i4').click(function(){
+	// $(".cont1").last().hide();
+	$(".sorti_i4").prepend($(".cont1").last());
+	imgg=$(".cont1").eq(2);
+	imgg2=imgg.attr("src");
+	$(".scale1_i4").attr('src', imgg2);
+// рисуем рамку
+$('.ramka_i4').removeClass('ramka_i4');
+$(imgg).addClass('ramka_i4');
+})
+$('.galk2_i4').click(function(){
+	// $(".cont1").last().hide();
+	$(".sorti_i4").prepend($(".cont1").last());
+	imgg=$(".cont1").eq(2);
+	imgg2=imgg.attr("src");
+	$(".scale1_i4").attr('src', imgg2);
+	$('.ramka_i4').removeClass('ramka_i4');
+$(imgg).addClass('ramka_i4');
+})
+// =================================================
+//информационное окошко 5 сек.
+$('.knopka1').click(function(){
+$('.window_i7').show().delay(5000).fadeOut();
+})
+$('.last3_i4').click(function(){
+	$('.window2_i7').show().delay(5000).fadeOut();
+})
