@@ -205,7 +205,7 @@ body {
     border-radius: 10px;
     list-style-type: disc;
     list-style-position: outside;
-    /* border: solid 3px cornsilk; */
+    z-index: 10;
 }
 
 .spisok__text {
@@ -501,7 +501,9 @@ h2 {
 }
 
 .svet11 {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .content__block2 {
@@ -1081,8 +1083,8 @@ h2 {
 }
 
 .wrapper__footer {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .footer__phon {
@@ -2221,6 +2223,18 @@ margin-bottom: 20px;
   .mobilt6_i7{
     display: none;
   }
+  .mobilt7_i7{
+    display: none;
+  }
+  .mobilt8_i7{
+    display: none;
+  }
+  .mobilt9_i7{
+    display: none;
+  }
+  .mobilt10_i7{
+    display: none;
+  }
   .mobiltext6_i7{
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -2325,6 +2339,7 @@ h1 {
     font-size: 20px;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .el2_i5{
     display: flex;
@@ -2334,6 +2349,7 @@ h1 {
     font-size: 20px;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .el3_i5{
     display: flex;
@@ -2344,6 +2360,42 @@ h1 {
     font-size: 20px;
     justify-content: center;
     align-items: center;
+}
+.el4_i5{
+
+}
+.el11_i5{
+    display: flex;
+    width: 25px;
+    height: 25px;
+    background-color: #000;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.el22_i5{
+    display: flex;
+    width: 25px;
+    height: 25px;
+    background-color: #000;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.el33_i5{
+    display: flex;
+    width: 40px;
+    height: 25px;
+    border: 1px solid;
+    border-color: #000;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.el44_i5{
+
 }
 .iam4_i5{
     grid-column-start: 1;
@@ -2861,7 +2913,11 @@ display: none;
     left: 75vw;
 }
 }
-
+@media (max-width: 700px) {
+    .footer__col1{
+        min-width: 10vw;
+    }
+}
 @media (max-width: 650px) {
     .end__base2 {
         width: 80%;
@@ -3304,7 +3360,7 @@ display: none;
     }
 
     .list__content1 {
-        align-items: start;
+        /* align-items: start; */
     }
 
     .tovar1_i3 {
@@ -3404,6 +3460,18 @@ display: none;
     .right{
         left: 62vw;
     }
+    .mobil1_4{
+        margin-bottom: 10px;
+    }
+    .mobil2_4{
+        margin-bottom: 10px; 
+    }
+    .mobil3_4{
+        margin-bottom: 10px;   
+    }
+    .mobil4_4{
+        margin-bottom: 10px;   
+    }
 }
 
 @media (max-width: 350px) {
@@ -3500,5 +3568,12 @@ display: none;
     }
     .right{
         left: 56vw;
+    }
+    .iam2_i4{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-right: 10px;
+        margin-bottom: 30px;
     }
 }

@@ -840,8 +840,124 @@ flagg6=1;
 		$('.ss116_i4').css('transform', 'rotate(-90deg)');
 		flagg6=0;
 }})	
+// третья деталь
+let flagg7=0;
+$('.ss117_i4').click(function(){	
+	if (flagg7==0) {
+$('.mobilt7_i7').show();
+$('.ss117_i4').css('transform', 'rotate(0)');
+flagg7=1;
+	} else {
+		$('.mobilt7_i7').hide();
+		$('.ss117_i4').css('transform', 'rotate(-90deg)');
+		flagg7=0;
+}})	
+// четвертая деталь
+let flagg8=0;
+$('.ss118_i4').click(function(){	
+	if (flagg8==0) {
+$('.mobilt8_i7').show();
+$('.ss118_i4').css('transform', 'rotate(0)');
+flagg8=1;
+	} else {
+		$('.mobilt8_i7').hide();
+		$('.ss118_i4').css('transform', 'rotate(-90deg)');
+		flagg8=0;
+}})	
+// пятая деталь
+let flagg9=0;
+$('.ss119_i4').click(function(){	
+	if (flagg9==0) {
+$('.mobilt9_i7').show();
+$('.ss119_i4').css('transform', 'rotate(0)');
+flagg9=1;
+	} else {
+		$('.mobilt9_i7').hide();
+		$('.ss119_i4').css('transform', 'rotate(-90deg)');
+		flagg9=0;
+}})	
+// ==================================================================
+// ==============Подборка============================================
+// добавить покупку1 (количество)
+let n1=1;
+let n2=25;
+let n3=0;
+let str='осталось';
+let n11=1;
+let n22=8;
+let n33=0;
+let str2='осталось';
+var cena1=0;
+var cena2=0;
+var str3='&nbsp р';
+var str4='&nbsp р';
+var cena3=0;
+var str5='Итого:&nbsp';
 
+$('.el2_i5').click(function(){
+	n1=n1+1;
+	if (n1>n2) {n1=n2}
+	$('.el3_i5').html(n1);
+	n3=n2-n1;
+str='осталось &nbsp'+n3+'&nbsp шт';
+	$('.el4_i5').html(str);
+	cena1=3300*n1;
+	str3=cena1+'&nbsp р';
+	cena3=cena1+cena2;
+	str5='Итого:&nbsp'+cena3+'&nbsp р'
+	$('.cena1_i5').html(str3);
+	$('.cena3_i5').html(str5);
+	return n1;
+})
+// убавить
+$('.el1_i5').click(function(){
+	n1=n1-1;
+	if (n1<0) {n1=0}
+	$('.el3_i5').html(n1);
+	n3=n2-n1;
+str='осталось &nbsp'+n3+'&nbsp шт';
+	$('.el4_i5').html(str);
+	cena1=3300*n1;
+	str3=cena1+'&nbsp р';
+	cena3=cena1+cena2;
+	str5='Итого:&nbsp'+cena3+'&nbsp р'
+	$('.cena1_i5').html(str3);
+	$('.cena3_i5').html(str5);
+	return n1;
+})
 
+// добавить покупку2
+$('.el22_i5').click(function(){
+	n11=n11+1;
+	if (n11>n22) {n11=n22}
+	$('.el33_i5').html(n11);
+	n33=n22-n11;
+str2='осталось &nbsp'+n33+'&nbsp шт';
+	$('.el44_i5').html(str2);
 
+	cena2=41500*n11;
+	str4=cena2+'&nbsp р';
+	cena3=cena1+cena2;
+	str5='Итого:&nbsp'+cena3+'&nbsp р'
+	$('.cena2_i5').html(str4);
+	$('.cena3_i5').html(str5);
+	return n11;
+})
+// убавить
+$('.el11_i5').click(function(){
+	n11=n11-1;
+	if (n11<0) {n11=0}
+	$('.el33_i5').html(n11);
+	n33=n22-n11;
+str2='осталось &nbsp'+n33+'&nbsp шт';
+	$('.el44_i5').html(str2);
 
+	cena2=41500*n11;
+	str4=cena2+'&nbsp р';
+	cena3=cena1+cena2;
+	str5='Итого:&nbsp'+cena3+'&nbsp р'
+	$('.cena2_i5').html(str4);
+	$('.cena3_i5').html(str5);
+	return n11;
+})
 
