@@ -2008,6 +2008,7 @@ display: none;
     margin-top: 50px;
     padding: 20px;
     text-align: center;
+    margin-bottom: 30px;
 }
 .last3_i4{
     margin-bottom: 30px;
@@ -2019,12 +2020,13 @@ display: none;
     
 } */
 .last22_i4{
+    display: none;
     padding-top: 20px;
     margin-bottom: 20px;
     text-align: center;
 }
 .last__table_i4{
-    display: grid;
+    display: none;
     justify-content: space-between;
     grid-template-columns: auto auto;
     grid-template-rows: repeat(16, 40px);
@@ -2084,7 +2086,7 @@ display: none;
     display: none;
 }
 .mobil1_4{
-    display: flex;
+    display: none;
     justify-content: space-between;
 }
 .galka1111_i4 {
@@ -2115,16 +2117,19 @@ display: none;
     transform: rotate(-90deg);
 }
 .mobil2_4{
-    display: flex;
+    display: none;
     justify-content: space-between;
 }
 .mobil3_4{
-    display: flex;
+    display: none;
     justify-content: space-between;  
 }
 .mobil4_4{
-    display: flex;
+    display: none;
     justify-content: space-between;  
+}
+.mobil5_4{
+    display: none;   
 }
 .font__14-400__gray2{
     color: #535353;
@@ -2142,32 +2147,100 @@ display: none;
 }
 .mobil55_i4{
 display: flex;
+align-items: center;
+margin-bottom: 20px;
 }
-.ss1_i4{
+.mobiltext1_i7{
+    display: block;
+}
+/* .mobiltext5_i7{
+    display: block;
+} */
+.ss110_i4{
+    display: flex;
+    transform: rotate(0);
+}
+.ss111_i4{
+    display: flex;
+    transform: rotate(-90deg);
+}
+/* .mobiltext1_i7{
+    display: none;
+    padding-top: 7px;
+} */
+.ss112_i4{
+    display: flex;
+    transform: rotate(-90deg);  
+}
+.ss113_i4{
+    display: flex;
+    transform: rotate(-90deg);
+}
+/* .ss1_i4{
   transform: rotate(-90deg);
- margin-bottom: 40px;
- margin-right: 10px;
-  margin-left: auto;
-}
-.ss2_i4{
+  margin-bottom: 40px;
+  margin-right: 10px;
+} */
+.ss114_i4{
+    display: flex;
     /* transform: rotate(-90deg); */
-   margin-bottom: 20px;
-   margin-right: 10px;
     margin-left: auto;
-    margin-top: 15px;
   }
-  .mobil6{
+.ss115_i4{
+    display: flex;
+    transform: rotate(0);
+    margin-left: auto;
+  }
+  .ss116_i4{
+    display: flex;
+    transform: rotate(-90deg);
+    margin-left: auto;
+  }
+  .ss117_i4{
+    display: flex;
+    transform: rotate(-90deg);
+    margin-left: auto;
+  }
+  .ss118_i4{
+    display: flex;
+    transform: rotate(-90deg);
+    margin-left: auto;
+  }
+  .ss119_i4{
+    display: flex;
+    transform: rotate(-90deg);
+    margin-left: auto;
+  }
+ 
+  .mobiltext5_i7{
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: repeat(9, 40px);
     margin-bottom: 20px;
   }
+  .mobilt6_i7{
+    display: none;
+  }
+  .mobiltext6_i7{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(9, 40px);
+    margin-bottom: 20px;
+  }
+  /* .none6_i7{
+    display: none;
+  } */
   .mobil66{
     justify-self : end;
     margin-right: 10px;
   }
   .iam1_i4{
+    background-color: #FFC94F;
     margin-right: 10px;
+    cursor: pointer;
+  }
+  .iam1_i4:hover{
+    opacity: 0.8;
   }
 .font__14-600__gray{
     color: #535353;
@@ -2564,15 +2637,47 @@ h1 {
     .nav_i4_0 {
         display: none;
     }
-    .block__none_i4{
-        display: none;
-    }
-    .mobil0_i4{
+    /* .text1_i4{
         display: block;
     }
+    .text2_i4{
+        display: block;
+    }
+    .text3_i4{
+        display: block;
+    }
+    .text4_i4{
+        display: block;
+    } */
+    /* .mobil0_i4{
+        display: block;
+    } */
     .last0_i4{
         display: none;
     }
+    .mobil1_4{
+        display: flex;
+        justify-content: space-between;
+    }
+    .mobil2_4{
+        display: flex;
+        justify-content: space-between;
+    }
+    .mobil3_4{
+        display: flex;
+        justify-content: space-between;  
+    }
+    .mobil4_4{
+        display: flex;
+        justify-content: space-between;  
+    }
+    .mobil5_4{
+        display: block;   
+    }
+    /* .mobiltext1_i7{
+        display: block;
+        padding-top: 7px;
+    } */
 }
 
 @media (max-width: 960px) {

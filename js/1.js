@@ -707,3 +707,141 @@ $('.window_i7').show().delay(5000).fadeOut();
 $('.last3_i4').click(function(){
 	$('.window2_i7').show().delay(5000).fadeOut();
 })
+// =================================================
+// =======аккордеон мобил===========================
+// описание (первый абзац)
+let flagg0=0;
+$('.ss110_i4').click(function(){	
+	if (flagg0==0) {
+$('.mobiltext1_i7').hide();
+$('.ss110_i4').css('transform', 'rotate(-90deg)');
+flagg0=1;
+	} else {
+		// закрываем три абзаца
+		$('.mobiltext2_i7').hide();
+		$('.ss111_i4').css('transform', 'rotate(-90deg)');
+		flagg1=0;
+
+		$('.mobiltext3_i7').hide();
+		$('.ss112_i4').css('transform', 'rotate(-90deg)');
+		flagg2=0;
+
+		$('.mobiltext4_i7').hide();
+		$('.ss113_i4').css('transform', 'rotate(-90deg)');
+		flagg3=0;
+		// теперь открываем этот абзац
+		$('.mobiltext1_i7').show();
+		$('.ss110_i4').css('transform', 'rotate(0)');
+		flagg0=0;
+}})	
+
+//  тех характеристики (второй абзац)
+let flagg1=0;
+$('.ss111_i4').click(function(){	
+	if (flagg1==0) {
+		// закрываем три абзаца
+		$('.mobiltext1_i7').hide();
+		$('.ss110_i4').css('transform', 'rotate(-90deg)');
+		flagg0=0;
+
+		$('.mobiltext3_i7').hide();
+		$('.ss112_i4').css('transform', 'rotate(-90deg)');
+		flagg2=0;
+
+		$('.mobiltext4_i7').hide();
+		$('.ss113_i4').css('transform', 'rotate(-90deg)');
+		flagg3=0;
+
+		// теперь открываем этот абзац
+$('.mobiltext2_i7').show();
+$('.ss111_i4').css('transform', 'rotate(0)');
+flagg1=1;
+	} else {
+		$('.mobiltext2_i7').hide();
+		$('.ss111_i4').css('transform', 'rotate(-90deg)');
+		flagg1=0;
+}})	
+
+// Конструктивные характеристики (третий абзац)
+let flagg2=0;
+$('.ss112_i4').click(function(){	
+	if (flagg2==0) {
+// закрываем три абзаца
+$('.mobiltext1_i7').hide();
+$('.ss110_i4').css('transform', 'rotate(-90deg)');
+flagg0=0;
+
+$('.mobiltext2_i7').hide();
+$('.ss111_i4').css('transform', 'rotate(-90deg)');
+flagg1=0;
+
+$('.mobiltext4_i7').hide();
+$('.ss113_i4').css('transform', 'rotate(-90deg)');
+flagg3=0;
+
+// теперь открываем этот абзац
+$('.mobiltext3_i7').show();
+$('.ss112_i4').css('transform', 'rotate(0)');
+flagg2=1;
+	} else {
+		$('.mobiltext3_i7').hide();
+		$('.ss112_i4').css('transform', 'rotate(-90deg)');
+		flagg2=0;
+}})	
+// Материалы для скачивания (четвертый абзац)
+let flagg3=0;
+$('.ss113_i4').click(function(){	
+	if (flagg3==0) {
+// закрываем три абзаца
+$('.mobiltext1_i7').hide();
+$('.ss110_i4').css('transform', 'rotate(-90deg)');
+flagg0=0;
+
+$('.mobiltext2_i7').hide();
+$('.ss111_i4').css('transform', 'rotate(-90deg)');
+flagg1=0;
+
+$('.mobiltext3_i7').hide();
+$('.ss112_i4').css('transform', 'rotate(-90deg)');
+flagg2=0;
+
+// теперь открываем этот абзац
+$('.mobiltext4_i7').show();
+$('.ss113_i4').css('transform', 'rotate(0)');
+flagg3=1;
+	} else {
+		$('.mobiltext4_i7').hide();
+		$('.ss113_i4').css('transform', 'rotate(-90deg)');
+		flagg3=0;
+}})	
+// ==========================================================
+// ===========аккордеон мобил2===============================
+// первая деталь
+let flagg5=0;
+$('.ss115_i4').click(function(){	
+	if (flagg5==0) {
+$('.mobiltext5_i7').hide();
+$('.ss115_i4').css('transform', 'rotate(-90deg)');
+flagg5=1;
+	} else {
+		$('.mobiltext5_i7').show();
+		$('.ss115_i4').css('transform', 'rotate(0)');
+		flagg5=0;
+}})	
+// вторая деталь
+let flagg6=0;
+$('.ss116_i4').click(function(){	
+	if (flagg6==0) {
+$('.mobilt6_i7').show();
+$('.ss116_i4').css('transform', 'rotate(0)');
+flagg6=1;
+	} else {
+		$('.mobilt6_i7').hide();
+		$('.ss116_i4').css('transform', 'rotate(-90deg)');
+		flagg6=0;
+}})	
+
+
+
+
+
