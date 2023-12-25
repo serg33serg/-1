@@ -887,11 +887,11 @@ let n11=1;
 let n22=8;
 let n33=0;
 let str2='осталось';
-var cena1=0;
-var cena2=0;
+var cena1=3300;
+var cena2=41500;
 var str3='&nbsp р';
 var str4='&nbsp р';
-var cena3=0;
+var cena3=44800;
 var str5='Итого:&nbsp';
 
 $('.el2_i5').click(function(){
@@ -961,3 +961,107 @@ str2='осталось &nbsp'+n33+'&nbsp шт';
 	return n11;
 })
 
+// сброс количества1 (удалить1)
+$('.nowrap1').click(function(){
+n1=0;
+$('.el3_i5').html(n1);
+str='осталось &nbsp'+n2+'&nbsp шт';
+$('.el4_i5').html(str);
+$('.cena1_i5').html('0 р');
+cena1=0;
+str5='Итого:&nbsp'+cena2+'&nbsp р'
+$('.cena3_i5').html(str5);
+$(this).fadeOut(100).fadeIn(100);
+})
+
+// сброс количества2 (удалить2)
+$('.nowrap2').click(function(){
+	n11=0;
+	$('.el33_i5').html(n11);
+	str='осталось &nbsp'+n22+'&nbsp шт';
+	$('.el44_i5').html(str);
+	$('.cena2_i5').html('0 р');
+	cena2=0;
+	str5='Итого:&nbsp'+cena1+'&nbsp р'
+	$('.cena3_i5').html(str5);
+	$(this).fadeOut(100).fadeIn(100);
+	})
+
+// нажатие кнопок на отправку
+$('.knopka1_i5').click(function(){
+	$(this).fadeOut(100).fadeIn(100);
+	})
+$('.knopka2_i5').click(function(){
+	$(this).fadeOut(100).fadeIn(100);
+	})
+$('.knopka3_i5').click(function(){
+	$(this).fadeOut(100).fadeIn(100);
+	})
+// ===========================================
+// =========Валидация ввода телефона==========
+$('.knopka_i11').click(function(){
+	// строка кнопка моргнула при нажатии и стерли старые ошибки
+$(this).fadeOut(100).fadeIn(100);
+$('.error1_i11').html('');
+$('.error2_i11').html('');
+$('.error3_i11').html('');
+	// проверка ввода имени
+let proverka=document.querySelector('.marker1_i1');
+let proverka2=proverka.classList.contains('box1_i1');
+console.log(proverka2);
+if (proverka2) {
+let youname = $('.fname1_i11').val();
+if (youname == 0) {
+	$('.error1_i11').html('Введите ваше имя, пожалуйста');
+}}
+
+// валидация набора телефона
+let phone = $('.fname2_i11').val();
+let regex = /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/;
+if(!regex.test(phone)) {
+	$('.error2_i11').html('Неправильный номер телефона');}
+
+	// проверка ввода реквизитов
+let youname2 = $('.fname3_i11').val();
+console.log(youname2);
+if (youname2 == 0) {
+	$('.error3_i11').html('Введите реквизиты, пожалуйста');
+}
+})
+
+// ==========================================================
+// Переключение вида организации на 11 странице
+$('.box1_i1').click(function(){
+	console.log('1');
+	$('.none1_i11').hide();
+	console.log('2');
+	$('.none2_i11').hide();
+	$('.none3_i11').hide();
+	$('.none1_i11').show();
+	
+// стираем предыдущие сообщения формы
+$('.error1_i11').html('');
+$('.error2_i11').html('');
+$('.error3_i11').html('');
+})
+$('.box3_i1').click(function(){
+	$('.none1_i11').hide();
+	$('.none2_i11').hide();
+	$('.none3_i11').hide();
+	$('.none2_i11').show();
+// стираем предыдущие сообщения формы
+$('.error1_i11').html('');
+$('.error2_i11').html('');
+$('.error3_i11').html('');
+})
+$('.box4_i1').click(function(){
+	$('.none1_i11').hide();
+	$('.none2_i11').hide();
+	$('.none3_i11').hide();
+	$('.none3_i11').show();
+// стираем предыдущие сообщения формы
+$('.error1_i11').html('');
+$('.error2_i11').html('');
+$('.error3_i11').html('');
+})
+// ========================================
