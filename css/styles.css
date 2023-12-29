@@ -2727,6 +2727,24 @@ margin-bottom: 50px;
     column-gap: 25px;
     margin-bottom: 30px;
 }
+.sm1_i11{
+    display: flex;
+}
+.sm2_i11{
+    display: flex;
+}
+.sm3_i11{
+    display: flex;
+}
+.sm11_i11{
+    display: none;
+}
+.sm22_i11{
+    display: none;
+}
+.sm33_i11{
+    display: none;
+}
 .font__12-500__gray2{
     color: #535353;
     font-family: "MontserratAlternates-Bold";
@@ -2786,8 +2804,32 @@ margin-bottom: 50px;
     justify-content: space-between;
 }
 .yellow_i11{
-    stroke: #FFC94F;
+    filter: invert(94%) sepia(77%) saturate(6101%) hue-rotate(316deg) brightness(101%) contrast(101%);
 }
+.galk1_i11 {
+    display: flex;
+    justify-content: center;
+    transform: rotate(0);
+    margin-bottom: 15px;
+}
+.galk2_i11 {
+    display: flex;
+    justify-content: center;
+    transform: rotate(-90deg);
+    margin-bottom: 15px;
+}
+.galk3_i11 {
+    display: flex;
+    justify-content: center;
+    transform: rotate(-90deg);
+    margin-bottom: 15px;
+}
+.mb40{
+    margin-bottom: 40px;
+}
+
+
+
 
 
 
@@ -3116,6 +3158,18 @@ display: none;
     grid-template-rows: auto auto;
     column-gap: 0px;
 }
+.contain2_i11 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    column-gap: 0px;
+}
+.contain3_i11 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    column-gap: 0px;
+}
 .nav_i11{
     display: none;
 }
@@ -3128,14 +3182,54 @@ display: none;
 .no3_i11{
     display: flex;
 }
-.none1_i11{
+/* .none1_i11{
 display: none;
-}
+} */
 .none2_i11{
 display: none;
 }
 .none3_i11{
 display: none;
+}
+.puth4_i11{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-rows: auto;
+    grid-template-rows: auto;
+    align-items: center;
+    column-gap: 25px;
+    margin-bottom: 30px;
+}
+.sm11_i11{
+    display: flex;
+    margin-right: 20px;
+    flex-shrink: 0;
+    /* width: 50px; */
+}
+.sm22_i11{
+    display: flex;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.sm33_i11{
+    display: flex;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.sm1_i11{
+    align-items: center;
+    margin-bottom: 20px;
+}
+.sm2_i11{
+    align-items: center;
+    margin-bottom: 20px;
+}
+.sm3_i11{
+    align-items: center;
+}
+.puth22{
+    display: none;
 }
 }
 @media (max-width: 700px) {

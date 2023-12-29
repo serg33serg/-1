@@ -1031,37 +1031,71 @@ if (youname2 == 0) {
 
 // ==========================================================
 // Переключение вида организации на 11 странице
+// физлица
 $('.box1_i1').click(function(){
-	console.log('1');
+var	fl1=$('.box1_i1');
+if (fl1.is('.yellow_i11')) {
 	$('.none1_i11').hide();
-	console.log('2');
+	$('.galk1_i11').css( 'transform', 'rotate(-90deg)').removeClass('yellow_i11');
+} else {
+	// $('.none1_i11').hide();
 	$('.none2_i11').hide();
+	$('.galk2_i11').css('transform', 'rotate(-90deg)').removeClass('yellow_i11');
+	// $(this).removeClass('yellow_i11');
 	$('.none3_i11').hide();
+	$('.galk3_i11').css( 'transform', 'rotate(-90deg)').removeClass('yellow_i11');
+	// $(this).removeClass('yellow_i11');
 	$('.none1_i11').show();
-	
+	$('.galk1_i11').css( 'transform', 'rotate(0)').addClass('yellow_i11');
+	// $(this).addClass('yellow_i11');
+	// console.log(this);
+	// if(number % 2 == 0){ 
 // стираем предыдущие сообщения формы
 $('.error1_i11').html('');
 $('.error2_i11').html('');
 $('.error3_i11').html('');
+}
 })
+// юр лица
 $('.box3_i1').click(function(){
-	$('.none1_i11').hide();
+		fl1=$('.box3_i1');
+if (fl1.is('.yellow_i11')) {
 	$('.none2_i11').hide();
+	$('.galk2_i11').css( 'transform', 'rotate(-90deg)').removeClass('yellow_i11');
+} else {
+	$('.none1_i11').hide();
+	$('.galk1_i11').css( 'transform', 'rotate(-90deg)').removeClass('yellow_i11');
+	// $(this).removeClass('yellow_i11');
 	$('.none3_i11').hide();
+	$('.galk3_i11').css( 'transform', 'rotate(-90deg)').removeClass('yellow_i11');
+	// $(this).removeClass('yellow_i11');
 	$('.none2_i11').show();
+	$('.galk2_i11').css( 'transform', 'rotate(0)').addClass('yellow_i11');
+	// $(this).addClass('yellow_i11');
 // стираем предыдущие сообщения формы
 $('.error1_i11').html('');
 $('.error2_i11').html('');
 $('.error3_i11').html('');
+}
 })
+// бюджетные организации
 $('.box4_i1').click(function(){
-	$('.none1_i11').hide();
-	$('.none2_i11').hide();
+		fl1=$('.box4_i1');
+if (fl1.is('.yellow_i11')) {
 	$('.none3_i11').hide();
+	$('.galk3_i11').css( 'transform', 'rotate(-90deg)').removeClass('yellow_i11');
+} else {
+	$('.none1_i11').hide();
+	$('.galk1_i11').css( 'transform', 'rotate(-90deg)').removeClass('yellow_i11');
+
+	$('.none2_i11').hide();
+	$('.galk2_i11').css( 'transform', 'rotate(-90deg)').removeClass('yellow_i11');
 	$('.none3_i11').show();
+	$('.galk3_i11').css( 'transform', 'rotate(0)').addClass('yellow_i11');
 // стираем предыдущие сообщения формы
 $('.error1_i11').html('');
 $('.error2_i11').html('');
 $('.error3_i11').html('');
+}
 })
 // ========================================
