@@ -881,7 +881,7 @@ flagg9=1;
 // добавить покупку1 (количество)
 let n1=1;
 let n2=25;
-let n3=0;
+let n3=24;
 let str='осталось';
 let n11=1;
 let n22=8;
@@ -989,14 +989,22 @@ $('.nowrap2').click(function(){
 
 // нажатие кнопок на отправку
 $('.knopka1_i5').click(function(){
-	$(this).fadeOut(100).fadeIn(100);
-	})
+	// проверка на открытость соседнего окна
+	if ($('.knopp2_i5').css('display') == 'none') { 
+	$(this).fadeOut(100);
+	$('.knop1_i5').css('display', 'flex').css('flex-direction', 'column');
+	}})
+
 $('.knopka2_i5').click(function(){
-	$(this).fadeOut(100).fadeIn(100);
-	})
+	// проверка на открытость соседнего окна
+	if ($('.knop1_i5').css('display') == 'none') { 
+	$(this).fadeOut(100);
+	$('.knopp2_i5').css('display', 'flex').css('flex-direction', 'column');
+	
 $('.knopka3_i5').click(function(){
-	$(this).fadeOut(100).fadeIn(100);
-	})
+	$(this).fadeOut(100);
+	$('.knopp2_i5').css('display', 'flex').css('flex-direction', 'column');
+})}})
 // ===========================================
 // =========Валидация ввода телефона==========
 $('.knopka_i11').click(function(){
@@ -1098,4 +1106,66 @@ $('.error2_i11').html('');
 $('.error3_i11').html('');
 }
 })
-// ========================================
+// =================================================
+// =====Кнопка1 окно отправки с index5.html======
+// Мигает кнопка
+$('.button_i5').click(function(){
+$(this).fadeOut(100).fadeIn(100);
+$('.knop1_i5').hide();
+$('.spasibo1_i5').css('display', 'flex').css('flex-direction', 'column');
+})
+// закрываем окно1
+$('.wind2_i5').click(function(){
+$('.knop1_i5').css('display', 'none');
+$('.knopka1_i5').css('display', 'flex');
+})
+// закрываем окно спасибо
+$('.spasibo6_i5').click(function(){
+	$('.spasibo1_i5').css('display', 'none');
+	$('.knopka1_i5').css('display', 'flex');
+})
+
+// =================================================
+// =====Кнопка2 окно2 отправки с index5.html======
+// кнопка окна2 при нажатии закрыв окно2 и открыв спасибо2
+// при отправке формы допроверка телефона
+
+function validateComments(input) {
+var phone0 = document.querySelector('.form4__tel');
+var phone = $('.form4__tel').val();
+var regex = /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/;
+	if (!regex.test(phone)) {
+	   input.setCustomValidity("Неправильный номер телефона");   
+	}
+	else {
+	   input.setCustomValidity("");
+	   $("#myform2").submit(function(e){
+		e.preventDefault();
+	});
+	$('.button2_i5').click(function(){
+$('.spasibo21_i5').css('display', 'flex').css('flex-direction', 'column');
+$('.knopp2_i5').hide();
+	})	
+}}
+
+// закрываем окно2
+$('.wind22_i5').click(function(){
+	$('.knopp2_i5').css('display', 'none');
+	$('.knopka2_i5').css('display', 'flex');
+	$('.knopka3_i5').css('display', 'flex');
+	})
+// закрываем спасибо2
+$('.spasibo26_i5').click(function(){
+$('.spasibo21_i5').hide();	
+$('.knopka2_i5').css('display', 'flex');
+})
+
+// ===============================================
+// =======открыаем окна в мобильной версии========
+// кнопка 2 (верхняя в мобильной версии) - при нажатии на нее
+$('.knopka1m_i5').click(function(){
+	// проверка на открытость соседнего окна
+	if ($('.knopp2_i5').css('display') == 'none') { 
+	$(this).fadeOut(100);
+	$('.knop1_i5').css('display', 'flex').css('flex-direction', 'column');
+	}})
